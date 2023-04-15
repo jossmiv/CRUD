@@ -1,8 +1,6 @@
 # CRUD
 Proyecto CRUD sin bases de datos en JavaScript que administra una tabla y su contenido, agregando, actualizando y eliminando registros a través de un formulario. Los datos del formulario se almacenan en el almacenamiento local de la página web. 
 
-La carpeta principal y a evaluar es CRUD/CRUD los archivos app.js e index.html
-
 La función obtenerRegistros() verifica si hay algún registro en el almacenamiento local. Si no hay ningún registro, se crea una matriz vacía y se almacena en el almacenamiento local. Luego, se devuelve la matriz de registros en el almacenamiento local.
 
 La función limpiarTabla() elimina todas las filas de la tabla excepto la primera fila que contiene los encabezados de la tabla.
