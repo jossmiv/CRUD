@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/fuentes/fuentes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+      <nav id="navheader">
+        <div id="logo">
+          <a href="index.html"><img src="img/logo.png" alt="logo" srcset=""></a>
+        </div>
+        <div id="menu">
+          <ul>
+            <li><a href="#" id="inicio">Inicio</a></li>
+            <li><a href="#" id="blog">Blog</a></li>
+            <li><a href="#" id="nosotros">Nosotros</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <main>
+      <div id="formulario">
+        <form id="captura">
+            <label for="datoNombre">
+              <input type="text" id="datoNombre" class="entrada" placeholder="Nombre">
+            </label>
+            <label for="datoCorreo">
+              <input type="email" id="datoCorreo" class="entrada" placeholder="Correo">
+            </label>
+            <label for="txtDescripcion">
+              <input type="text" id="txtDescripcion" placeholder="Descripción" class="entrada">
+            </label> 
+            <button id="btnUpload" type="button" class="btn btn-secondary" >Subir</button>
+        </form>
+      </div>
+      <div id="formularioEdicion" style="display: none;">
+        <h2>Editar registro</h2>
+        <form id="capturaEdicion">
+          <input type="text" id="datoNombreE" placeholder="Nombre completo" required>
+          <input type="email" id="datoCorreoE" placeholder="Correo electrónico" required>
+          <input type="text" id="txtDescripcionE" placeholder="Descripción del registro"></input>
+          <input type="hidden" id="idRegistro">
+          <button type="submit">Guardar cambios</button>
+        </form>
+      </div>      
+      <br>
+      <div id="tabla"  class="table-responsive">
+        <table id="tablaRegistro" class="table table-light table-primary">
+          <thead>
+            <tr id="encabezado">
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Descripción</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr class="registroPersona">
+              <td id=Identificador>1</td>
+              <td id="Nombre">José</td>
+              <td id="Correo">pepemijares1@hotmail.com</td>
+              <td id="Descripción">Estudiante</td>
+              <td>
+                <button id="btnEditar" class="btn btn-secondary">Editar</button>
+                <button id="btnBorrar" class="btn btn-secondary">Eliminar</button>
+              </td> 
+            </tr>   -->
+          </tbody>        
+        </table>
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

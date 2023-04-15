@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    font-family: Montserrat;
+}
+p*{
+    font-family: Montserrat;
+}
+
+header{
+    background-color: #a6f7d8;
+    width: 100%;
+}
+#navheader{
+    height: 110px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#navheader #logo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+nav #logo a{
+    cursor: pointer;
+    text-decoration: none;
+}
+nav #logo a img{
+    border-radius: 50%;
+    width: 90px;
+}
+
+#navheader #menu{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding-right: 3%;
+}
+header nav #menu a{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+header nav #menu a:visited{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: #000000;
+    
+}
+
+header li{
+    display: inline-block;
+    font-size: 16px;
+    line-height: inherit;
+    letter-spacing: 1px;
+}
+header nav #menu ul li{
+    margin: 5px;
+    margin-right: 15px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#formulario{
+    width: 95%;
+    height: 150px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button{
+    --bs-btn-padding-y: .25rem; 
+    --bs-btn-padding-x: .5rem; 
+    --bs-btn-font-size: .75rem;
+}
+#formulario .entrada{
+    width: 250px;
+    padding-top: 7px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-bottom-right-radius: 15px;
+    background: transparent;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+#tabla{
+    width: 95%;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
