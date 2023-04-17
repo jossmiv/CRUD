@@ -10,11 +10,23 @@ header{
     background-color: #a6f7d8;
     width: 100%;
 }
+@media screen and (max-width:800px){
+    header #navheader{
+        display: grid;
+        width: auto;
+        height: auto;
+        align-content: center;
+        justify-items: center;
+    }
+    
+}
+
 #navheader{
     height: 110px;
     position: relative;
     display: flex;
     align-items: center;
+    justify-items: center;
 }
 #navheader #logo{
     height: 100%;
@@ -22,6 +34,17 @@ header{
     display: flex;
     align-items: center;
     margin-left: 5%;
+}
+@media screen and (max-width:800px) {
+    #navheader #logo {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+}
 }
 nav #logo a{
     cursor: pointer;
@@ -70,7 +93,31 @@ header nav #menu ul li{
     margin: 5px;
     margin-right: 15px;
 }
+@media screen and (max-width:800px){
+    #navheader #menu{
+        
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 2%;
+        margin: 0;
+    }
+    header ul{
+        display:grid;
+        align-items: center;
+        text-align: center;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+        margin: 0;
 
+    }
+    header li{
+        margin: 0;
+        padding: 0;
+    }
+}
 main{
     width: 100%;
     display: flex;
@@ -87,6 +134,32 @@ main{
     align-items: center;
     justify-content: center;
     
+}
+@media screen and (max-width:800px) {
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+    #formulario form #captura{
+        flex-direction: column;
+        display: flex;
+        width: 70%;
+    }
+    #formulario label{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    #formulario button{
+        width: 100%;
+    }
 }
 button{
     --bs-btn-padding-y: .25rem; 
@@ -149,6 +222,12 @@ footer .contenedor{
     justify-content: center;
     width: 100%;
 }
+@media screen and (max-width:800px){
+    footer .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+}
 footer a{
     cursor: pointer;
     text-decoration: underline;
@@ -159,6 +238,11 @@ footer a{
     text-decoration: none;
     margin-right: 5%;
     margin-left: 5%;
+}
+@media screen and (max-width:800px){
+    footer a{
+        padding-bottom: 5%;
+    }
 }
 footer p{
     margin-left: 5%;
