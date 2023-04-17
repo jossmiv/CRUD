@@ -4,6 +4,8 @@ function obtenerRegistros() {
   } 
     return JSON.parse(localStorage.getItem('registros'));
 }
+obtenerRegistros();
+console.log(localStorage.getItem('registros'))
 function limpiarTabla() {
   let tab = document.getElementById('tablaRegistro');
   // Eliminar todas las filas de la tabla
@@ -61,6 +63,8 @@ upload.addEventListener('click', (e)=>{
     document.getElementById('datoCorreoE').value = correo;
     document.getElementById('txtDescripcionE').value = descripcion;
 
+
+
     // Mostrar un mensaje de éxito en la actualización
     alert('Registro actualizado correctamente');
 
@@ -89,25 +93,26 @@ function mostrarFormularioEdicion(id) {
 }
 
 
-  var formularioEdicion = document.getElementById('capturaEdicion');
-  formularioEdicion.addEventListener('submit', function (e) {
-      e.preventDefault();
+var formularioEdicion = document.getElementById('capturaEdicion');
+formularioEdicion.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-      // Obtener los valores del formulario de edición
-      var nombreEd = document.getElementById('datoNombre').value;
-      var correoEd = document.getElementById('datoCorreo').value;
-      var descripcionEd = document.getElementById('txtDescripcion').value;
-      var idEd = document.getElementById('idRegistro').value;
+    // Obtener los valores del formulario de edición
+    var nombreEd = document.getElementById('datoNombreE').value;
+    var correoEd = document.getElementById('datoCorreoE').value;
+    var descripcionEd = document.getElementById('txtDescripcionE').value;
+    var idEd = document.getElementById('idRegistro').value;
 
-      // Actualizar el registro en el arreglo de registros
-      actualizarRegistro(Number(idEd), nombreEd, correoEd, descripcionEd);
+    // Actualizar el registro en el arreglo de registros
+    actualizarRegistro(Number(idEd), nombreEd, correoEd, descripcionEd);
 
-      // Ocultar el formulario de edición
-      document.getElementById('formularioEdicion').style.display = 'none';
+    // Ocultar el formulario de edición
+    document.getElementById('formularioEdicion').style.display = 'none';
 
-      // Limpiar el formulario de edición
-      formularioEdicion.reset();
-  });
+    // Limpiar el formulario de edición
+    formularioEdicion.reset();
+});
+
 
 function eliminarRegistro(id) {
   var registros = JSON.parse(localStorage.getItem('registros'));

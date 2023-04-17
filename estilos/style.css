@@ -107,6 +107,20 @@ button{
     margin-right: 5px;
 }
 
+#capturaEdicion input{
+    width: 250px;
+    padding-top: 7px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-bottom-right-radius: 15px;
+    background: transparent;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
 #tabla{
     width: 95%;
