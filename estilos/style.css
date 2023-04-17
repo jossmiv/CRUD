@@ -129,3 +129,72 @@ button{
 table{
     width: 100%;
 }
+.w-6{
+    width: 1.5rem;
+}
+.h-6{
+    width: 1.5rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: #a6f7d8;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+footer .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+footer a{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: rgb(255, 255, 255);;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+footer p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+footer a:visited{
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: rgb(255, 255, 255);
+}
+.titulop h2{
+    font-family: Poiret One;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+.csocial{
+    width: 30%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.csocial a{
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-color:#e4cfbb;
+    letter-spacing: 8px;
+}
+@media screen and (max-width:800px) {
+   .csocial a{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2%;
+   } 
+}

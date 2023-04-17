@@ -30,7 +30,7 @@ upload.addEventListener('click', (e)=>{
   var registros = JSON.parse(localStorage.getItem("registros"));
 
   var registro = {
-      id : registros.length + 1,
+      id : Date.now(),
       nombre : nombreCap,
       correo : correoCap,
       descripcion : descripcionCap
@@ -62,11 +62,6 @@ upload.addEventListener('click', (e)=>{
     document.getElementById('datoNombreE').value = nombre;
     document.getElementById('datoCorreoE').value = correo;
     document.getElementById('txtDescripcionE').value = descripcion;
-
-
-
-    // Mostrar un mensaje de éxito en la actualización
-    alert('Registro actualizado correctamente');
 
     // Actualizar la tabla con los registros actualizados
     localStorage.setItem('registros', JSON.stringify(registros));
